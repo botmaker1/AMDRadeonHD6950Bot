@@ -11,16 +11,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     message_content = message.content
-    bad = message_content.find("fuck")
-    print(bad)
-    if bad>= 0:
-        await message.channel.send("왜 욕을 하노...")
-    await bot.process_commands(message)
-
-@bot.event
-async def on_message(message):
-    message_content = message.content
-    bad = message_content.find("Fuck")
+    bad = message_content.find("Fuck", "fuck", "싯 팔", "싯팔")
     print(bad)
     if bad>= 0:
         await message.channel.send("왜 욕을 하노...")
