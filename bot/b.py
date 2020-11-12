@@ -18,5 +18,9 @@ async def 숨목록(ctx):
     if __name__ == "__main__":
     bot.run(TOKEN)
 
+@.command()
+async def 따라하기(ctx, *, text):
+    await ctx.send(text)
+    
 if __name__ == "__main__":
     bot.run(TOKEN)
