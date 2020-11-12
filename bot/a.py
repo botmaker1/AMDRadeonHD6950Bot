@@ -45,6 +45,5 @@ async def hhub(ctx):
     await ctx.send("www.pornhub.com")
     await ctx.send("DNS 쓰는 거 아시죠?")
 
-    
 if __name__ == "__main__":
     bot.run(TOKEN)
