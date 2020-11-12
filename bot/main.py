@@ -9,7 +9,7 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @bot.command()
-async def 야스(ctx):
+async def ping(ctx):
     await ctx.send("야스봇 v7.0")
 if __name__ == "__main__":
     bot.run(TOKEN)
