@@ -26,24 +26,6 @@ async def on_message(message):
         await message.channel.send("왜 욕을 하노...")
     await bot.process_commands(message)
 
-@bot.event
-async def on_message(message):
-    message_content = message.content
-    bad = message_content.find("싯 팔")
-    print(bad)
-    if bad>= 0:
-        await message.channel.send("왜 욕을 하노...")
-    await bot.process_commands(message)
-
-@bot.event
-async def on_message(message):
-    message_content = message.content
-    bad = message_content.find("싯팔")
-    print(bad)
-    if bad>= 0:
-        await message.channel.send("왜 욕을 하노...")
-    await bot.process_commands(message)
-
 @bot.command()
 async def 야스(ctx):
     await ctx.send("야스봇 v7.0")
