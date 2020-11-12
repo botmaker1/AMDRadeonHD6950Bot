@@ -33,5 +33,6 @@ async def 숨목록(ctx):
     async def 숨숨목록(ctx):
     await ctx.send("!hhub : 그 허브 주소를 알려드립니다.")
     await ctx.send("!xx : 그 Videos 주소를 알려드립니다.")
-    if __name__ == "__main__":
+
+if __name__ == "__main__":
     bot.run(TOKEN)
