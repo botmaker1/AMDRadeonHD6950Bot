@@ -36,12 +36,12 @@ async def 숨목록(ctx):
     await ctx.send("//숨목록 : 궁금하면 해보세요")
     
 @bot.command()
-async def /숨목록(ctx):
+async def 숨숨목록(ctx):
     await ctx.send("//hub : 그 허브 주소를 알려드립니다.")
     await ctx.send("//x : 그 Videos 주소를 알려드립니다.")
     
 @bot.command()
-async def /hub(ctx):
+async def hhub(ctx):
     await ctx.send("www.pornhub.com")
     await ctx.send("DNS 쓰는 거 아시죠?")
 
