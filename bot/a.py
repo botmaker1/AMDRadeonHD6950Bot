@@ -9,14 +9,14 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @bot.event
-async def on_message(message):
-    message_content = message.content
-    bad = message_content.find("Fuck", "fuck", "싯 팔", "싯팔")
-    print(bad)
-    if bad>= 0:
-        await message.channel.send("왜 욕을 하노...")
-    await bot.process_commands(message)
+bad = ['ㅅㅂ','시발','씨발','Fuck','fuck','싯팔','싯 팔']
+async def on_message(message): ##### remove bad words 
+    message_content=message.content
+    for i in bad:
+        if i in message_content:
+            await message.channel.send("왜 욕을 하노...")
 
+출처: https://j-ungry.tistory.com/180 [정구리의 우주정복]
 @bot.command()
 async def 야스(ctx):
     await ctx.send("야스봇 v7.0")
