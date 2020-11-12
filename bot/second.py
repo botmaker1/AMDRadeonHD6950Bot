@@ -10,11 +10,10 @@ async def on_ready():
 
 @bot.command()
 
-bot.run(TOKEN)
 async def ping(ctx):
     await ctx.send("pong")
-
-async def 야스(ctx):
+@bot.command(name="야스")
+async def _야스(ctx):
     await ctx.send("야스봇 v7.0")
     await ctx.send("명령어 목록입니다. 모든 명령어 앞에는 !를 입력하세요.")
     await ctx.send("!오늘 : 오늘의 날짜를 알려드립니다.")
@@ -27,13 +26,15 @@ async def 야스(ctx):
     await ctx.send("!코 : 중국산 코로나 관련 정보를 알려드립니다.")
     await ctx.send("!숨목록 : 숨겨진 명령어 목록을 알려드립니다.")
     await ctx.send("!역사 : 역사 시험범위 제외 부분을 알려드립니다.")
-async def 숨목록(ctx):
+@bot.command(name="숨목록")
+async def _숨목록(ctx):
     await ctx.send("숨겨진 명령어 목록입니다. 여기 명령어들은 대부분 !가 필요 없습니다.(있는 것은 ! 쳐져있음)")
     await ctx.send("fuck(또는 Fuck) : Lily Allen의 Fuck You 음악 뮤비 유튜브 주소를 보여드립니다.")
     await ctx.send("!섹온비 : 섹온비 유튜브 주소를 띄웁니다.")
     await ctx.send("!ijhs : Lonely Island의 I Just Had Sex 유튜브 뮤비 주소를 띄웁니다.")
     await ctx.send("숨숨목록 : 궁금하면 해보세요")
-async def 숨숨목록(ctx):
+@bot.command(name="숨숨목록")
+                   async def _숨숨목록(ctx):
     await ctx.send("!hhub : 그 허브 주소를 알려드립니다.")
     await ctx.send("!xx : 그 Videos 주소를 알려드립니다.")
 async def xx(ctx):
@@ -65,3 +66,4 @@ async def 역사(ctx):
     await ctx.send("역사 시험범위 제외 부분 : 266쪽 ~ 270쪽")
 async def 유튭(ctx):
     await ctx.send("1 Hour Videos https://www.youtube.com/channel/UC6sFMBFItCp5OjHIv0re_vQ")
+bot.run(TOKEN)
