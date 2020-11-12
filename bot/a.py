@@ -57,7 +57,7 @@ async def 숨목록(ctx):
 async def xx(ctx):
     await ctx.send("xvideos.com")
     await ctx.send("DNS 쓰는 거 아시죠?")
-    
+
 if __name__ == "__main__":
     bot.run(TOKEN)
 
