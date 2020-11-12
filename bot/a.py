@@ -22,5 +22,6 @@ async def 야스(ctx):
     await ctx.send("!코 : 중국산 코로나 관련 정보를 알려드립니다.")
     await ctx.send("!숨목록 : 숨겨진 명령어 목록을 알려드립니다.")
     await ctx.send("!역사 : 역사 시험범위 제외 부분을 알려드립니다.")
-    if __name__ == "__main__":
+    
+if __name__ == "__main__":
     bot.run(TOKEN)
