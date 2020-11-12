@@ -52,6 +52,31 @@ async def 버스티드():
     await ctx.send("머스타드")
 
 @bot.command()
+async def 월시간표():
+    await ctx.send("월요일 시간표입니다.")
+    await ctx.send("1교시 과학C\n2교시 음악\n3교시 국사\n4교시 수학\n5교시 영어\n6교시 과학D\n7교시 창의A")
+
+@bot.command()
+async def 화시간표():
+    await ctx.send("화요일 시간표입니다.")
+    await ctx.send("1교시 사회A\n2교시 사회B\n3교시 국사\n4교시 체육A\n5교시 국어\n6교시 수학\n7교시 음악")
+
+@bot.command()
+async def 수시간표():
+    await ctx.send("수요일 시간표입니다.")
+    await ctx.send("1교시 과학A\n2교시 수학\n3교시 국어\n4교시 영어\n5~6교시 동아리/자율")
+
+@bot.command()
+async def 목시간표():
+    await ctx.send("목요일 시간표입니다.")
+    await ctx.send("1교시 사회B\n2교시 체육B\n3교시 수학\n4교시 창의B\n5교시 영어\n6교시 국사\n7교시 국어")
+
+@bot.command()
+async def 금시간표():
+    await ctx.send("금요일 시간표입니다.")
+    await ctx.send("1교시 정보\n2교시 과학\n3교시 음악\n4교시 실험\n5교시 국어\n6교시 사회A\n7교시 영어")
+
+@bot.command()
 async def test(ctx, *args):
     await ctx.send('{} arguments: {}'.format(len(args), ', '.join(args)))
 
