@@ -9,7 +9,7 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @bot.command()
-async def (ctx):
+async def 야스(ctx):
     await ctx.send("야스봇 v7.0")
     await ctx.send("명령어 목록입니다. 모든 명령어 앞에는 !를 입력하세요.")
     await ctx.send("!오늘 : 오늘의 날짜를 알려드립니다.")
