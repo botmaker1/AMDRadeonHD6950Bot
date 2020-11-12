@@ -10,6 +10,6 @@ async def on_ready():
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send("야스봇 v7.0")
+    await ctx.send("pong")
 if __name__ == "__main__":
     bot.run(TOKEN)
