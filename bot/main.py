@@ -9,6 +9,9 @@ async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
 
 @bot.command()
+if __name__ == "__main__":
+    bot.run(TOKEN)
+
 async def ping(ctx):
     await ctx.send("pong")
 async def 야스(ctx):
@@ -64,5 +67,3 @@ async def 유튭(ctx):
     await ctx.send("1 Hour Videos https://www.youtube.com/channel/UC6sFMBFItCp5OjHIv0re_vQ")
 
 
-if __name__ == "__main__":
-    bot.run(TOKEN)
