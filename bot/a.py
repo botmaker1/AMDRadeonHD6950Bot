@@ -24,7 +24,7 @@ async def 야스(ctx):
     await ctx.send("/역사 : 역사 시험범위 제외 부분을 알려드립니다.")
 
 @bot.command()
-async def 따라하기(ctx, *, text)
+async def 따라하기(ctx, *, text):
     await ctx.send(text)
 
 if __name__ == "__main__":
