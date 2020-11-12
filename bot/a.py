@@ -27,5 +27,32 @@ async def 야스(ctx):
 async def 따라하기(ctx, *, text):
     await ctx.send(text)
 
+@bot.command()
+async def 따라하기(ctx, *, text):
+    await ctx.send(text)
+
+@bot.command()
+async def 숨숨목록(ctx):
+    await ctx.send("/hhub : 그 허브 주소를 알려드립니다.")
+    await ctx.send("/xx : 그 Videos 주소를 알려드립니다.")
+
+@bot.command()
+async def hhub(ctx):
+    await ctx.send("www.pornhub.com")
+    await ctx.send("DNS 쓰는 거 아시죠?")
+
+@bot.command()
+async def 숨목록(ctx):
+    await ctx.send("숨겨진 명령어 목록입니다. 여기 명령어들은 대부분 슬래쉬가 필요 없습니다.(있는 것은 슬래쉬 쳐져있음)")
+    await ctx.send("fuck(또는 Fuck) : Lily Allen의 Fuck You 음악 뮤비 유튜브 주소를 보여드립니다.")
+    await ctx.send("/섹온비 : 섹온비 유튜브 주소를 띄웁니다.")
+    await ctx.send("/ijhs : Lonely Island의 I Just Had Sex 유튜브 뮤비 주소를 띄웁니다.")
+    await ctx.send("/숨숨목록 : 궁금하면 해보세요")
+
+@bot.command()
+async def xx(ctx):
+    await ctx.send("xvideos.com")
+    await ctx.send("DNS 쓰는 거 아시죠?")
+
 if __name__ == "__main__":
     bot.run(TOKEN)
