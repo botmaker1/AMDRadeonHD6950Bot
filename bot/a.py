@@ -15,8 +15,8 @@ async def on_message(message): ##### remove bad words
     for i in bad:
         if i in message_content:
             await message.channel.send("왜 욕을 하노...")
+        await bot.process_commands(message)
 
-출처: https://j-ungry.tistory.com/180 [정구리의 우주정복]
 @bot.command()
 async def 야스(ctx):
     await ctx.send("야스봇 v7.0")
