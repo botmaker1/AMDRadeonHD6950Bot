@@ -52,6 +52,10 @@ async def 버스티드():
     await ctx.send("머스타드")
 
 @bot.command()
+async def test(ctx, *args):
+    await ctx.send('{} arguments: {}'.format(len(args), ', '.join(args)))
+
+@bot.command()
 async def 따라하기(ctx, *, text):
     await ctx.send(text)
 
