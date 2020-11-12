@@ -7,18 +7,6 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
-@bot.event
-async def on_member_join(member);
-await member.send("새 게이 왔노");
-@bot.event
-async def on_message(message)
-message_content = message.content
-bad = message_content.find("fuck")
-print(bad)
-if bad >= 0:
-    await message.channel.send("나쁜말 쓰지 말자 게이야...")
-    await message.delete()
-    await bot.process_commands(message)
 
 @bot.command()
 async def 야스(ctx):
